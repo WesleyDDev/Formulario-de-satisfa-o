@@ -1,0 +1,49 @@
+.body {
+  background-color: aqua;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body .form {
+  width: 450px;
+  height: 450px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body .form .cxtxt {
+  display: flex;
+  flex-direction: column;
+}
+.body .form .cxnome {
+  width: 350px;
+  height: 30px;
+  text-decoration: none;
+  border: solid 1px;
+  color: rgb(88, 88, 87);
+  background-color: rgb(245, 245, 245);
+  margin-bottom: 20px;
+}
+.body .form .cxatendimento {
+  width: 350px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.body .form .cxarea {
+  height: 150px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+.body .form .botao {
+  background-color: aquamarine;
+  width: 350px;
+  height: 40px;
+  text-decoration: none;
+  border: solid 1px black;
+  cursor: pointer;
+  font-size: 20px;
+}/*# sourceMappingURL=form.module.css.map */
