@@ -39,7 +39,7 @@ export default function Home() {
           <div className={styles.cxtxt}>
 
           <label>Atendimento no prazo :</label>
-          <input className={styles.cxnome} type="text" placeholder=" Digite Seu Nome" onChange={(e) => setName(e.target.value)} value={name}></input>
+          <input className={styles.cxnome} type="text" placeholder=" Digite Aqui" onChange={(e) => setName(e.target.value)} value={name}></input>
           <div className={styles.cxtxt}>
 
           <label>Qualidade dos entregaveis?</label>
