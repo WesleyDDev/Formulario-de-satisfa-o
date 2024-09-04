@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../form/form.module.scss'
 import { useState } from 'react';
 import emailjs from '@emailjs/browser'
+import Input from "@/componentes/inputs/index.jsx"
 
 export default function Home() {
     const [name, setName] = useState('')
@@ -38,12 +39,45 @@ export default function Home() {
       <form className={styles.form} onSubmit={sendEmail}  >
           <div className={styles.cxtxt}>
 
+
           <label>Atendimento no prazo :</label>
-          <input className={styles.cxnome} type="text" placeholder=" Digite Aqui" onChange={(e) => setName(e.target.value)} value={name}></input>
+            
+          <section className={styles.box}>
+            <div className={styles.input1}>
+            <label className={styles.label}>Pessimo</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}  value={1}></input>
+            </div>
+
+            <div className={styles.input2}>
+            <label className={styles.label}>Ruim</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={"Ruim"}></input>
+            </div>
+
+            <div className={styles.input3}>
+            <label className={styles.label}>Bom</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={3}></input>
+            </div>
+
+            <div className={styles.input4}>
+            <label className={styles.label}>Otimo</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={4}></input>
+            </div>
+
+            <div className={styles.input5}>
+            <label className={styles.label}>Exelente</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={5}></input>
+            </div>
+            
+            
+        </section>
+        
           <div className={styles.cxtxt}>
 
           <label>Qualidade dos entregaveis?</label>
           <input className={styles.cxatendimento} type="text" placeholder=" Digite Aqui"onChange={(e) => setQualidade(e.target.value)} value={qualidade}></input>
+
+         
+
           </div>
           
           <div className={styles.cxtxt}>
