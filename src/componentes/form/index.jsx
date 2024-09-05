@@ -1,5 +1,8 @@
 
 import Image from 'next/image';
+import Link from 'next/link';
+
+
 import styles from '../form/form.module.scss'
 import { useState } from 'react';
 import emailjs from '@emailjs/browser'
@@ -30,6 +33,13 @@ export default function Home() {
         }
 
         emailjs.send("service_670rz4p","template_a3e2x6r",templatesParams,"fBWMXyKgS1C4qzYGE")
+
+
+        function trocarTela(e){
+          if(btn === true){
+            alert(funcionando)
+          }
+        }
     }
 
    return (
@@ -42,9 +52,10 @@ export default function Home() {
       <p>Gostaria de saber de voce oque achou do meu trabalho!</p>
       <p>Responda esse formulario para me ajudar a desenvolver minhas habilidades</p>
       <h4>Conto com você!</h4>
+      
 
       </section>
-      <form className={styles.form} onSubmit={sendEmail}  >
+      <form className={styles.form} id='2' onSubmit={sendEmail}  >
           <div className={styles.cxtxt}>
 
 
