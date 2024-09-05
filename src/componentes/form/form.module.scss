@@ -1,39 +1,64 @@
 
 
 
-.fundo{
-  background-image: url(../../imagens/fundo2.jpg);
-  background-size: cover;
-  height: 650px;
-  width: 100%;
-  background-repeat: no-repeat;
-  
-}
+
 .body{
-  background: rgb(2,0,36);
-  background: linear-gradient(356deg, rgba(2, 0, 36, 0.952) 0%, rgba(9, 95, 121, 0.473) 48%, rgba(13, 233, 196, 0.466) 100%, rgba(0, 213, 255, 0.486) 100%);
+  
     height: 650px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.993);
+
+    .apre{
+      width: 350px;
+      height: 600px;
+      background-color: antiquewhite;
+      border-radius:5px 0px 0px 5px ; 
+      box-shadow: 0px 0px   6px rgba(0, 0, 0, 0.329);
+      color: black;
+
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+      
+      gap:50px;
+
+      h1{
+        font-size: 50px;
+      }
+      h3{font-size: 25px;}
+      p{font-size:16px;}
+
+      
+    }
   
     .form{
       width: 350px;
-      height: 500px;
-      border: solid 1px rgba(41, 40, 40, 0.158);
+      height: 600px;
+      border: solid 1px rgba(41, 40, 40, 0);
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: rgba(0, 0, 0, 0.459);
-      border-radius: 5px;
-      box-shadow: 0px 0px 6px black;
+      background-color: rgba(28, 17, 180, 0.712);
+      border-radius: 0px 5px 5px 0px ;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.979);
+
+      .label{
+        font-size: small;
+        font-size: 13px;
+        display: flex;
+        color: rgb(215, 213, 218);
+      }
       
       .cxtxt{
         display: flex;
         flex-direction: column;
+        gap: 10px;
+        
       }
       .cxnome{
         width: 300px;
@@ -43,12 +68,15 @@
         background-color: rgba(245, 245, 245, 0.089);
         margin-bottom: 20px;
         background-color: rgba(253, 253, 253, 0.842);
+        display: flex;
 
       }
        .cxatendimento{
         width: 300px;
         height: 25px;
         margin-bottom: 20px;
+        
+
 
        }
 
@@ -75,6 +103,8 @@
         border:none;
         outline: none;
       }
+
+      
       input{
         outline: none;
         background-color: rgba(253, 253, 253, 0.842);
@@ -94,6 +124,11 @@
         font-size: 20px;
         border-radius: 5px;
         color: white;
+      }
+
+      .botao:hover{
+        background:linear-gradient(356deg, rgb(3, 49, 56) 0%, rgb(5, 6, 71) 48%, rgb(4, 63, 110) 100%, rgb(0, 95, 114) 100%); 
+        
       }
   
     }
@@ -120,6 +155,7 @@
       width: 20px;
       height: 20px;
       margin: 10px;
+      border-radius: 50%;
       
   }
   
@@ -128,7 +164,7 @@
       position: absolute;
       width: 10px;
       height: 10px;
-      background-color: rgb(27, 179, 48);
+      background-color: rgb(4, 7, 4);
       border-radius: 50%;
       align-items: center;
       opacity: 0;

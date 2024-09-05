@@ -16,9 +16,11 @@ export default function Home() {
   return (
 
 
-  <section className={styles.fundo}>
+  <section className={styles.imgfundo}>
+    <div className={styles.grad}>
 
-    <Form/>
+      <Form/>
+    </div>
   </section>
     
       )

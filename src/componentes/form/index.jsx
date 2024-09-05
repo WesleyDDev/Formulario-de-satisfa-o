@@ -34,63 +34,155 @@ export default function Home() {
 
    return (
   <main>
-    <div className={styles.fundo}>
+    
     <section className={styles.body}>
+      <section className={styles.apre}>
+      <h1>Olá</h1>
+      <h3>Bem vindo ao formulario de satisfação</h3>
+      <p>Gostaria de saber de voce oque achou do meu trabalho!</p>
+      <p>Responda esse formulario para me ajudar a desenvolver minhas habilidades</p>
+      <h4>Conto com você!</h4>
+
+      </section>
       <form className={styles.form} onSubmit={sendEmail}  >
           <div className={styles.cxtxt}>
 
 
-          <label>Atendimento no prazo :</label>
+          <label>Atendimento no prazo:</label>
             
           <section className={styles.box}>
             <div className={styles.input1}>
             <label className={styles.label}>Pessimo</label>
-            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}  value={1}></input>
+            <input className={styles.input}  type="radio" name="21" onChange={(e) => setName(e.target.value)}  value={"Péssimo"}></input>
             </div>
 
             <div className={styles.input2}>
             <label className={styles.label}>Ruim</label>
-            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={"Ruim"}></input>
+            <input className={styles.input}  type="radio" name="21" onChange={(e) => setName(e.target.value)}value={"Ruim"}></input>
             </div>
 
             <div className={styles.input3}>
             <label className={styles.label}>Bom</label>
-            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={3}></input>
+            <input className={styles.input}  type="radio" name="21" onChange={(e) => setName(e.target.value)}value={"Bom"}></input>
             </div>
 
             <div className={styles.input4}>
             <label className={styles.label}>Otimo</label>
-            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={4}></input>
+            <input className={styles.input}  type="radio" name="21" onChange={(e) => setName(e.target.value)}value={"Otímo"}></input>
             </div>
 
             <div className={styles.input5}>
             <label className={styles.label}>Exelente</label>
-            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setName(e.target.value)}value={5}></input>
+            <input className={styles.input}  type="radio" name="21" onChange={(e) => setName(e.target.value)}value={"Exelente"}></input>
             </div>
-            
             
         </section>
         
           <div className={styles.cxtxt}>
 
           <label>Qualidade dos entregaveis?</label>
-          <input className={styles.cxatendimento} type="text" placeholder=" Digite Aqui"onChange={(e) => setQualidade(e.target.value)} value={qualidade}></input>
+          <section className={styles.box}>
+            <div className={styles.input1}>
+            <label className={styles.label}>Pessimo</label>
+            <input className={styles.input}  type="radio" name="ic" onChange={(e) => setQualidade(e.target.value)}  value={"Péssimo"}></input>
+            </div>
+
+            <div className={styles.input2}>
+            <label className={styles.label}>Ruim</label>
+            <input className={styles.input}  type="radio" name="ic" onChange={(e) => setQualidade(e.target.value)}value={2}></input>
+            </div>
+
+            <div className={styles.input3}>
+            <label className={styles.label}>Bom</label>
+            <input className={styles.input}  type="radio" name="ic" onChange={(e) => setQualidade(e.target.value)}value={"Bom"}></input>
+            </div>
+
+            <div className={styles.input4}>
+            <label className={styles.label}>Otimo</label>
+            <input className={styles.input}  type="radio" name="ic" onChange={(e) => setQualidade(e.target.value)}value={"Otímo"}></input>
+            </div>
+
+            <div className={styles.input5}>
+            <label className={styles.label}>Exelente</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setQualidade(e.target.value)}value={"Exelente"}></input>
+            </div>
+            
+            
+        </section>
 
          
 
           </div>
           
           <div className={styles.cxtxt}>
-          <label>Comunicação</label>
-          <input className={styles.cxcomunicacao} type="text" placeholder=" Digite Aqui"onChange={(e) => setComunicacao(e.target.value)} value={comunicacao}></input>
+          <label>Comunicação:</label>
+          <section className={styles.box}>
+            <div className={styles.input1}>
+            <label className={styles.label}>Pessimo</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setComunicacao(e.target.value)}  value={"Péssimo"}></input>
+            </div>
+
+            <div className={styles.input2}>
+            <label className={styles.label}>Ruim</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setComunicacao(e.target.value)}value={2}></input>
+            </div>
+
+            <div className={styles.input3}>
+            <label className={styles.label}>Bom</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setComunicacao(e.target.value)}value={"Bom"}></input>
+            </div>
+
+            <div className={styles.input4}>
+            <label className={styles.label}>Otimo</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setComunicacao(e.target.value)}value={"Otímo"}></input>
+            </div>
+
+            <div className={styles.input5}>
+            <label className={styles.label}>Exelente</label>
+            <input className={styles.input}  type="radio" name="icon" onChange={(e) => setComunicacao(e.target.value)}value={"Exelente"}></input>
+            </div>
+            
+            
+        </section>
           </div>
+
           <div className={styles.cxtxt}>
-          <label>Expectativas atendidas:</label>
-          <input className={styles.cxexp} type="text" placeholder=" Digite Aqui"onChange={(e) => setExp(e.target.value)} value={exp}></input>
+            <label>Expectativas:</label>
+          <section className={styles.box}>
+            <div className={styles.input1}>
+            <label className={styles.label}>Pessimo</label>
+            <input className={styles.input}  type="radio" name="ico" onChange={(e) => setExp(e.target.value)}  value={"Péssimo"}></input>
+            </div>
+
+            <div className={styles.input2}>
+            <label className={styles.label}>Ruim</label>
+            <input className={styles.input}  type="radio" name="ico" onChange={(e) => setExp(e.target.value)}value={"Ruim"}></input>
+            </div>
+
+            <div className={styles.input3}>
+            <label className={styles.label}>Bom</label>
+            <input className={styles.input}  type="radio" name="ico" onChange={(e) => setExp(e.target.value)}value={"Bom"}></input>
+            </div>
+
+            <div className={styles.input4}>
+            <label className={styles.label}>Otimo</label>
+            <input className={styles.input}  type="radio" name="ico" onChange={(e) => setExp(e.target.value)}value={"Otímo"}></input>
+            </div>
+
+            <div className={styles.input5}>
+            <label className={styles.label}>Exelente</label>
+            <input className={styles.input}  type="radio" name="ico" onChange={(e) => setExp(e.target.value)}value={"Exelente"}></input>
+            </div>
+            
+            
+        </section>
+
           </div>
+
+          
           
           <div className={styles.cxtxt}>
-          <label>Elogio/Critica/Sugestão :</label>
+          <label>Elogio/Critica/Sugestão:</label>
           <textarea className={styles.cxarea} type="text" placeholder=" Digite Aqui"onChange={(e) => setTxt(e.target.value)} value={txt}></textarea>
           </div>
           
@@ -103,7 +195,7 @@ export default function Home() {
       
       
       
-    </div>
+    
     </main>   
       
       
